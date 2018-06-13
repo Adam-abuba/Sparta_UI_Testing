@@ -51,7 +51,7 @@ class SeleniumQaToolsForm
   def select_tool
     @chrome_driver.find_element(:id, @tool).click
   end
-
+  #
   # def select_continent(text)
   #   @chrome_driver.find_element(:id, @continent_button).click
   #   @chrome_driver.find_element(:tag_name, 'option').send_keys(text)
