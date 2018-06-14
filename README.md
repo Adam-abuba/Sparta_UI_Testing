@@ -1,6 +1,6 @@
 # Sparta UI Testing
 
-The task was to create
+The task was to utilise the tool selenium WebDriver for chrome to create a set of automated test for the website <http://demoqa.com/registration/>. The webpage was a form that required various fields to be filled such as first, name, las name, username and password. 
 ## Setup 
 - Once you access the GitHub repository you can obtain the files by either taking the repository clone link and running `git clone [insert clone link here]`.
 - You can also obtain the files by directly downloading them from GitHub as a zip file.

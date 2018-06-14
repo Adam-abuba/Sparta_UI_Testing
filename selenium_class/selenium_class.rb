@@ -2,9 +2,6 @@ require 'selenium-webdriver'
 
 class SeleniumQaToolsForm
 
-
-
-
   def initialize
     @chrome_driver = Selenium::WebDriver.for :chrome
     @practice_form_url = 'http://toolsqa.com/automation-practice-form'
@@ -51,12 +48,6 @@ class SeleniumQaToolsForm
   def select_tool
     @chrome_driver.find_element(:id, @tool).click
   end
-  #
-  # def select_continent(text)
-  #   @chrome_driver.find_element(:id, @continent_button).click
-  #   @chrome_driver.find_element(:tag_name, 'option').send_keys(text)
-  #   @chrome_driver.find_element(:tag_name, 'option').send_keys :enter
-  # end
 end
 testing = SeleniumQaToolsForm.new
 testing.visit_practice_form
@@ -67,4 +58,3 @@ testing.input_experience_checkbox
 testing.input_date_field("12th June 2018")
 testing.select_proffesion
 testing.select_tool
-# testing.select_continent("europe")

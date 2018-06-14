@@ -41,10 +41,12 @@ class SeleniumDemoReg
 
   def set_first_name_field(first_name)
     @chrome_driver.find_element(:id, FIRST_NAME_FIELD).send_keys(first_name)
+    sleep 1
   end
 
   def get_first_name_field_value
     @chrome_driver.find_element(:id, FIRST_NAME_FIELD)['value']
+    sleep 1
   end
 
   def first_name_field_displayed
@@ -55,6 +57,7 @@ class SeleniumDemoReg
 
   def set_last_name_field(last_name)
     @chrome_driver.find_element(:id, LAST_NAME_FIELD).send_keys(last_name)
+    sleep 1
   end
 
   def get_last_name_field_value
@@ -70,6 +73,7 @@ class SeleniumDemoReg
   def select_marital_option(martial_status)
     # Consider something like a case statement and check the selenium selected? method
     @chrome_driver.find_elements(:name, MARITAL_STATUS)[martial_status].click
+    sleep 1
   end
 
   # hobby option management - Difficulty Medium
@@ -77,6 +81,7 @@ class SeleniumDemoReg
   def select_hobby_option(hobby)
     # Consider something like a case statement and check the selenium selected? method
      @chrome_driver.find_elements(:name, HOBBY_STATUS)[hobby].click
+     sleep 1
   end
 
   # Select Country - Difficulty HARD
@@ -91,6 +96,7 @@ class SeleniumDemoReg
 
   def country_dropdown_list_select(country)
     @chrome_driver.find_element(:id,COUNTRY_DROP_DOWN_LIST).send_keys(country)
+    sleep 1
   end
 
   # DOB management - Difficulty HARD
@@ -101,14 +107,17 @@ class SeleniumDemoReg
 
   def dob_month_list_select(month_value)
     @chrome_driver.find_element(:id, DOB_MONTH_DROPDOWN_LIST).send_keys(month_value)
+    sleep 1
   end
 
   def dob_day_list_select(day_value)
     @chrome_driver.find_element(:id, DOB_DAY_DROPDOWN_LIST).send_keys(day_value)
+    sleep 1
   end
 
   def dob_year_list_select(year_value)
     @chrome_driver.find_element(:id, DOB_YEAR_DROPDOWN_LIST).send_keys(year_value)
+    sleep 1
   end
 
 
@@ -116,6 +125,7 @@ class SeleniumDemoReg
 
   def set_phone_number_field(phone_number)
     @chrome_driver.find_element(:id, PHONE_NUMBER_FIELDS).send_keys(phone_number)
+    sleep 1
   end
 
   def get_phone_number_field_value
@@ -126,6 +136,7 @@ class SeleniumDemoReg
 
   def set_user_name_field(user_name)
     @chrome_driver.find_element(:id, USERNAME_FIELD).send_keys(user_name)
+    sleep 1
   end
 
   def get_user_name_field_value
@@ -136,6 +147,7 @@ class SeleniumDemoReg
 
   def set_email_field(email)
     @chrome_driver.find_element(:id, EMAIL_FIELD).send_keys(email)
+    sleep 1
   end
 
   def get_email_field_value
@@ -146,6 +158,7 @@ class SeleniumDemoReg
 
   def set_about_yourself_field(details)
     @chrome_driver.find_element(:id, DESCRIPTION_FIELD).send_keys(details)
+    sleep 1
   end
 
   def get_about_yourself_value
@@ -156,6 +169,7 @@ class SeleniumDemoReg
 
   def set_password_field(password)
     @chrome_driver.find_element(:id, DESCRIPTION_FIELD).send_keys(password)
+    sleep 1
   end
 
   def get_password_value
@@ -164,6 +178,7 @@ class SeleniumDemoReg
 
   def set_confirmation_password_field(password)
     @chrome_driver.find_element(:id, CONFIRM_PASSWORD_FIELD).send_keys(password)
+    sleep 1
   end
 
   def get_confirmation_password_value
@@ -174,6 +189,7 @@ class SeleniumDemoReg
 
   def click_submit
     @chrome_driver.find_element(:name, SUBMIT_BUTTON).click
+    sleep 1
   end
 
   def check_registration_successful
