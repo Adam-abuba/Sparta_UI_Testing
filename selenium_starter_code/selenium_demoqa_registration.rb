@@ -168,7 +168,7 @@ class SeleniumDemoReg
   # Password management - Difficulty Easy
 
   def set_password_field(password)
-    @chrome_driver.find_element(:id, DESCRIPTION_FIELD).send_keys(password)
+    @chrome_driver.find_element(:id, PASSWORD_FIELD).send_keys(password)
     sleep 1
   end
 
